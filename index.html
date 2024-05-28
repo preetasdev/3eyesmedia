@@ -9,28 +9,49 @@
     <body>
         <section class="header">
             <nav>
-                <a href="Index.html"><img src="newlogofinal.png"></a>
+                <a href="home.html" class="logo-text" ><h3 class="logo-text">3EYESMEDIA</h3></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
 
                     <ul>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="home.html">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
+        </section>
+     
+        <section class="title-body">
+            <img src="images/6481665_923.jpg" class="background">
 
             <div class="textbox">
-                <h2>END-TO-END</h2>
-                <h1> INFLUENCER MARKETING</h1>
-                <p>We're your dedicated partners in propelling startups towards success.
-                    With a blends of expertise and innovation, <br> we offer comprehensive solutions tailored to meet the specific needs of each venture we work with</p>
+                <div class="static-txt"><h2>END-TO-END</h2></div>
+                <div class="wrapper">
+             
+                <ul class="dynamic-txt">
+                <li><span>INFLUENCER MARKETING</span></li>
+                <li><span>BRAND BUILDING</span></li>
+                <li><span>TALENT MANAGEMENT</span></li>
+                <li><span>SOCIAL MEDIA MARKETING</span></li>
+                </ul>
+                 </div>
+                <p class="p-text">We are your committed allies in helping entrepreneurs achieve success. 
+                   We provide comprehensive solutions that are customized <br> to fit the unique requirements of every project we work on using a combination of experience and creativity.</p>
                     <a href="" class="sub-btn">Subscribe to know more </a>
             </div>
+        
+       
             
         </section>
+
+
+    
+
+
+   
+
 
 
         <!-------------------Services------------------->
@@ -38,27 +59,49 @@
         <Section class="Services">
 
             <h1>Services We Offer</h1>
-            <p>Expertly manage every aspect of your INFLUENCER campaigns, <br>from identifying the rigth INFLUENCER to executing strategies that enhance brand visiblity and engagement</p>
+            <p style="color: aliceblue;">Expertly manage every aspect of your INFLUENCER campaigns, <br>from identifying the rigth INFLUENCER to executing strategies that enhance brand visiblity and engagement</p>
             <div class="row">
                 <div class="services-col">
-                    <h3>Service 1</h3>
-                    <p>lets take some contents for refrence this is sevivce we offer to our client </p>
+                    <h3 class="ser-title">INFLUENCER CAMPAIGN MANAGEMENT</h3>
+                   
+                    <p class="ser-p">Expertly managed every aspect of your influencer campaigns, from identifying the right influencers 
+                        to executing strategies that enhance brand visiblity and engagement. </p>
+                    
                 </div>
                 <div class="services-col">
-                    <h3>Service 2</h3>
-                    <p>lets take some contents for refrence this is sevivce we offer to our client </p>
+                    <h3 class="ser-title">USER GENERATED CONTENT</h3>
+                    <p class="ser-p">Drive authentic engagement by encouraging and leveraging user-generated content that
+                        resonte with your audiance, boosting brand loyalty and trust  </p>
                 </div>
                 <div class="services-col">
-                    <h3>Service 3</h3>
-                    <p>lets take some contents for refrence this is sevivce we offer to our client </p>
+                    <h3 class="ser-title">INFLUENCER LIVE ON LOCATION</h3>
+                    <p class="ser-p">Amplify your brand's presence with live influencer event and activations that engage audiance in real-time, creating memorable experience that enhance brand perception. </p>
                 </div>
+                
+              
+            </div>
+            <div class="row">
+                <div class="services-col">
+                    <h3 class="ser-title">INFLUENCER MARKETING CONSULTING</h3>
+                    <p class="ser-p">Provide bespoke consulting services that help you harness the full potential of influencer marketig, tailored to meet your brand's specific objectives and industry nuances. </p>
+                </div>
+                <div class="services-col">
+                    <h3 class="ser-title">BRAND AMBASSADOR PROGRAM</h3>
+                    <p class="ser-p">Develop and manage comprehensive brand ambassador program to cultivate long-term relationships with key influencer who embody your brand's values and extend its reach.</p>
+                </div>
+                <div class="services-col">
+                    <h3 class="ser-title">INFLUENCER AFFILATE PROGRAM</h3>
+                    <p class="ser-p">Implement influencer affilate programs that incentivize content creators to promote your product, driving sales and expanding your brand's footprint through trusted voice.</p>
+                </div>
+
 
             </div>
         </Section>
     <!--------------Call of action---------->
         <section class="cta">
+            
             <h1>Enroll for our various services anywhere from the world </h1>
-            <a href="" class="sub-btn">Contact US </a>
+            <a href="contactus.html" class="sub-btn" >Contact US</a>
         </section>
 
           <!--------------FOOTER---------->
@@ -74,6 +117,8 @@
             </div>
         </section>
 
+            
+       
 
 
 
@@ -87,6 +132,16 @@
         function hideMenu(){
             navLinks.style.right ="-200px";
         }
+
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
     </Script>
         
     </body>
